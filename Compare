@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;
+    cin>>a>>b;
+    if(a>b) cout<<"A is Greater";
+    else if(b>a) cout<<"B is Greater";
+    else cout<<"Equal";
+    return 0;
+}
