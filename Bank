@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Bank {
+public:
+    int accno;
+    float balance;
+
+    Bank() {
+        cin >> accno >> balance;
+    }
+
+    void display() {
+        cout << accno << " " << balance << endl;
+    }
+
+    ~Bank() {
+        cout << "Destructor Called";
+    }
+};
+
+int main() {
+    Bank b;
+    b.display();
+    return 0;
+}
