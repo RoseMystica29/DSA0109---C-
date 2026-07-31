@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Book {
+public:
+    int id;
+    string name;
+
+    Book() {
+        cin >> id >> name;
+    }
+
+    void display() {
+        cout << id << " " << name << endl;
+    }
+
+    ~Book() {
+        cout << "Destructor Called";
+    }
+};
+
+int main() {
+    Book b;
+    b.display();
+    return 0;
+}
