@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string name;
+    int price;
+
+    Car() {
+        cin >> name >> price;
+    }
+
+    void display() {
+        cout << name << " " << price << endl;
+    }
+
+    ~Car() {
+        cout << "Destructor Called";
+    }
+};
+
+int main() {
+    Car c;
+    c.display();
+    return 0;
+}
