@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    int l, b;
+
+    Rectangle() {
+        cin >> l >> b;
+    }
+
+    void area() {
+        cout << l * b;
+    }
+
+    ~Rectangle() {
+        cout << "\nDestructor Called";
+    }
+};
+
+int main() {
+    Rectangle r;
+    r.area();
+    return 0;
+}
