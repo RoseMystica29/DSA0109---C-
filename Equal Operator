@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Num {
+    int x;
+public:
+    Num(int a=0){ x=a; }
+
+    void input(){ cin>>x; }
+
+    bool operator==(Num n){
+        return x==n.x;
+    }
+};
+
+int main() {
+    Num a,b;
+    a.input();
+    b.input();
+
+    if(a==b)
+        cout<<"Equal";
+    else
+        cout<<"Not Equal";
+}
