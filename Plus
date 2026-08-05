@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class Num {
+    int x;
+public:
+    Num(int a=0){ x=a; }
+
+    void input(){ cin>>x; }
+
+    Num operator+(Num n){
+        return Num(x+n.x);
+    }
+
+    void display(){ cout<<x; }
+};
+
+int main() {
+    Num a,b,c;
+    a.input();
+    b.input();
+    c=a+b;
+    c.display();
+}
