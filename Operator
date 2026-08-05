@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class Num {
+    int x;
+public:
+    void input(){ cin>>x; }
+
+    friend ostream& operator<<(ostream &out, Num n){
+        out<<n.x;
+        return out;
+    }
+};
+
+int main() {
+    Num n;
+    n.input();
+    cout<<n;
+}
